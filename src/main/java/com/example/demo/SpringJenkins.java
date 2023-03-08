@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-public class SpringJenkins {
+public class SpringJenkins extends SpringBootServletInitializer {
 
 	public static Logger logger = LoggerFactory.getLogger(SpringJenkins.class);
 	
