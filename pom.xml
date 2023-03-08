@@ -13,8 +13,8 @@
 	<version>SpringJenkinsMaven</version>
 	
 	<packaging>war</packaging>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>SpringJenkinsDeployment</name>
+	<description>Demo project for Spring Boot Jenkins Deployment</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -49,6 +49,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>SpringJenkinsDeployment</finalName>
 	</build>
 
 </project>
