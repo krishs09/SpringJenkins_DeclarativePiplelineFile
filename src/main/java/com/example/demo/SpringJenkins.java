@@ -12,8 +12,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages= {"com.example.conroller","com.example.demo"})
-//public class SpringJenkins extends SpringBootServletInitializer {
-public class SpringJenkins  {
+public class SpringJenkins extends SpringBootServletInitializer {
+//public class SpringJenkins  {
 	public static Logger logger = LoggerFactory.getLogger(SpringJenkins.class);
 	
 	

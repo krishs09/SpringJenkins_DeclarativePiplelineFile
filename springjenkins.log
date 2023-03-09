@@ -40,3 +40,14 @@
 2023-03-09 12:12:17.241  INFO 1408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
 2023-03-09 12:12:17.247  INFO 1408 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
 2023-03-09 12:12:17.249  INFO 1408 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2023-03-09 12:12:17.297  INFO 1408 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 12:12:17.314  INFO 1408 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1751 ms
+2023-03-09 12:12:17.340  INFO 1408 --- [restartedMain] com.example.demo.SpringJenkins           : Application started..
+2023-03-09 12:12:17.627  INFO 1408 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-09 12:12:17.664  INFO 1408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-09 12:12:17.679  INFO 1408 --- [restartedMain] com.example.demo.SpringJenkins           : Started SpringJenkins in 2.436 seconds (JVM running for 311.32)
+2023-03-09 12:12:17.684  INFO 1408 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-03-09 12:22:47.504  INFO 1408 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 12:22:47.504  INFO 1408 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-09 12:22:47.510  INFO 1408 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-03-09 12:22:54.466  INFO 1408 --- [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
