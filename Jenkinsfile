@@ -26,7 +26,9 @@ pipeline {
 
 		stage('Build') {
 			    steps {
-				echo 'Bulding App'
+				echo 'Bulding App...'
+				    
+				  call mvn clean package
 			    }
         	}
         
