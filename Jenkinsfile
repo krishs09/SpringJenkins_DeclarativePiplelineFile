@@ -3,7 +3,7 @@ pipeline {
     agent any
 	
 	tools { 
-        maven "Maven"
+        maven 'MAVEN_HOME' 
     }
 
     stages {
@@ -12,10 +12,16 @@ pipeline {
             steps {
                 
                     echo 'PATH = %PATH%'
-                    echo 'M2_HOME = %Maven%'
+                    echo 'M2_HOME = %M2_HOME%'
               
             }
         }
+		
+		stage ('Checkout'){
+		
+			echo 'Cloning...'
+			checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/krishs09/SpringJenkins_DeclarativePiplelineFile.git']])
+		}
 
 		stage('Build') {
             steps {
