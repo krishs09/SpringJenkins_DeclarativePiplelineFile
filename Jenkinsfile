@@ -3,7 +3,7 @@ pipeline {
     agent any
 	
 	tools { 
-        maven 'M2_HOME' 
+        maven 'MAVEN_HOME' 
     }
 
     stages {
@@ -11,8 +11,8 @@ pipeline {
 		stage ('Initialize') {
             steps {
                 
-                    echo "PATH = %PATH%"
-                    echo "M2_HOME = %M2_HOME%"
+                    echo 'PATH = %PATH%'
+                    echo 'M2_HOME = %M2_HOME%'
               
             }
         }
