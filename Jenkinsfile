@@ -28,7 +28,8 @@ pipeline {
 			    steps {
 				echo 'Bulding App...'
 				    
-				  call mvn clean package
+				  call mvn clean
+				  call mvn package
 			    }
         	}
         
