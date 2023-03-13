@@ -18,9 +18,10 @@ pipeline {
         }
 		
 		stage ('Checkout'){
-		
-			echo 'Cloning...'
-			checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/krishs09/SpringJenkins_DeclarativePiplelineFile.git']])
+			steps {
+				echo 'Cloning...'
+				checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/krishs09/SpringJenkins_DeclarativePiplelineFile.git']])
+			}
 		}
 
 		stage('Build') {
