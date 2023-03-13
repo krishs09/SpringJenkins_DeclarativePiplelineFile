@@ -1,8 +1,21 @@
 pipeline {
 
     agent any
+	
+	tools { 
+        maven 'M2_HOME' 
+    }
 
     stages {
+	
+		stage ('Initialize') {
+            steps {
+                
+                    echo "PATH = %PATH%"
+                    echo "M2_HOME = %M2_HOME%"
+              
+            }
+        }
 
 		stage('Build') {
             steps {
@@ -20,14 +33,6 @@ pipeline {
             steps {
                 echo 'Deploying App'
             }
-        }
-    }
-    
-    post {
-        
-        always
-        {
-            emailext body: 'Summary', subject: 'Pipeline status', to: 'kyadav016@gmail.com'    
         }
     }
 }
