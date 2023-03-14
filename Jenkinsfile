@@ -20,7 +20,7 @@ pipeline {
                     echo 'M2_HOME = %Maven%'
               
             }
-        }
+        } 
 		
 		stage ('Checkout'){
 			steps {
