@@ -37,6 +37,8 @@ pipeline {
 					cd freddie-app
 					mvn clean package
 				  """
+		    
+		    echo "${env.WORKSPACE}"
             }
         }
         
