@@ -38,7 +38,7 @@ pipeline {
 					mvn clean package
 				  """
 		    
-		    echo "${env.WORKSPACE}"
+		    echo "Current workspace is ${env.WORKSPACE}"
             }
         }
         
