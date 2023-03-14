@@ -45,7 +45,7 @@ pipeline {
 		stage('Test') {
             steps {
                 echo 'Testing App'
-            }
+            } 
         } 
 		
 		stage('Deploy') {
