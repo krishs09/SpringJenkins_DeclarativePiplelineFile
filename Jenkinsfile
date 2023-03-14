@@ -7,7 +7,7 @@ pipeline {
     }
 	
 	parameters {
-    string(name: 'server', defaultValue: "C:\Users\admin\Downloads\apache-tomcat-9.0.73")
+    string(name: 'server', defaultValue: "C:\\Users\\admin\\Downloads\\apache-tomcat-9.0.73")
  //   string(name: 'emailTo', defaultValue: "timothyjames.short@gmail.com")
   }
 
