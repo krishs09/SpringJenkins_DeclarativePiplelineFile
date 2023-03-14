@@ -10,5 +10,5 @@ public class MainController {
 	@GetMapping("/hello")
 	public String welcome() {  
 		return "Welcome Here sgain";
-	} 
+	}
 }
