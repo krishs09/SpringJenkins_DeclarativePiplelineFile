@@ -5,6 +5,11 @@ pipeline {
 	tools { 
         maven 'Maven' 
     }
+	
+	parameters {
+    string(name: 'server', defaultValue: "C:\Users\admin\Downloads\apache-tomcat-9.0.73")
+ //   string(name: 'emailTo', defaultValue: "timothyjames.short@gmail.com")
+  }
 
     stages {
 	
@@ -25,13 +30,15 @@ pipeline {
 		}
 
 		stage('Build') {
-			    steps {
-				echo 'Bulding App...'
-				    
-				  call mvn clean
-				  call mvn install
-			    }
-        	}
+            steps {
+                echo 'Bulding App..'
+				
+				bat """
+					cd freddie-app
+					mvn clean package
+				  """
+            }
+        }
         
 		stage('Test') {
             steps {
