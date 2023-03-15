@@ -40,7 +40,7 @@ pipeline {
 		    
 		    echo "Current workspace is ${env.WORKSPACE}"
 			
-			bat "xcopy /y ${env.WORKSPACE}\\SpringJenkinsDeployment.war C:\\Users\\admin\\Downloads\\apache-tomcat-9.0.73\\webapps"
+			bat "xcopy /y ${env.WORKSPACE}/SpringJenkinsDeployment.war C:\\Users\\admin\\Downloads\\apache-tomcat-9.0.73\\webapps"
 			
 			echo "Copied file successfully."
             }
