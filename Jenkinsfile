@@ -52,7 +52,7 @@ pipeline {
 		stage('Deploy') {
             steps {
                 echo 'Deploying App...'
-		bat "xcopy /y ${env.WORKSPACE}\SpringJenkinsDeployment.war C:\\Users\\admin\\Downloads\\apache-tomcat-9.0.73\\webapps"
+		bat "xcopy /y ${env.WORKSPACE}\\target\\SpringJenkinsDeployment.war C:\\Users\\admin\\Downloads\\apache-tomcat-9.0.73\\webapps"
 		echo "Deployed file successfully."
             }
         }
