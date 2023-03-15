@@ -16,8 +16,9 @@ pipeline {
 		stage ('Initialize') {
             steps {
                 
-		    echo 'PATH = ${PATH}'
-		    echo 'M2_HOME = ${Maven}'
+                
+                   echo 'PATH = ${PATH}'
+					echo 'M2_HOME = ${Maven}'
               
             }
         } 
@@ -37,12 +38,8 @@ pipeline {
 					cd freddie-app
 					mvn clean package
 				  """
-		    
+				  
 		    echo "Current workspace is ${env.WORKSPACE}"
-			
-			bat "xcopy /y ${env.WORKSPACE}/SpringJenkinsDeployment.war C:\\Users\\admin\\Downloads\\apache-tomcat-9.0.73\\webapps"
-			
-			echo "Copied file successfully."
             }
         }
         
@@ -54,7 +51,9 @@ pipeline {
 		
 		stage('Deploy') {
             steps {
-                echo 'Deploying App'
+                echo 'Deploying App...'
+				bat "xcopy /y ${env.WORKSPACE}\SpringJenkinsDeployment.war C:\\Users\\admin\\Downloads\\apache-tomcat-9.0.73\\webapps"
+				echo "Deployed file successfully."
             }
         }
     }
